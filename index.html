@@ -6,6 +6,7 @@
 
 <p id="demo1"></p>
 <p id="demo2"></p>
+<p id="demo3"></p>
 
 <script>
 var text = '{"employees":[' +
@@ -17,15 +18,28 @@ obj = JSON.parse(text);
 document.getElementById("demo1").innerHTML =
 obj.employees[1].firstName + " " + obj.employees[1].lastName;
 
+var noun = [
+{"en":"Car", "de_1":"das", "de_2":"Auto", "de_3":"Autos"},
+{"en":"Book", "de_1":"das", "de_2":"Buch", "de_3":"Bücher"}
+];
+
+
+
 var word = [
- { "en":"hello" , "de":"hallo" },
+{ "en":"hello" , "de":"hallo" },
 { "en":"bye" , "de":"tschüss" },
 { "en":"no" , "de":"nein" }
 ];
 
-
 document.getElementById("demo2").innerHTML = 
 word[2].en +" : "+ word[2].de;
+
+
+document.getElementById("demo3").innerHTML = 
+noun[0].en + 
+" : " + noun[0].de_1+
+" , " + noun[0].de_2+
+" , " + noun[0].de_3;
 
 
 </script>
