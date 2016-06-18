@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
 <body>
 
 <h2>Create Object from JSON String</h2>
-
-<p id="demo1"></p>
-<p id="demo2"></p>
-<p id="demo3"></p>
+<div class="replace">
+	<p id="demo1">	Para1	</p>
+	<p id="demo2">	Para2	</p>
+	<p id="demo3">	Para3	</p>
+	<p id="demo3">	Para4	</p>
+</div>
 
 <script>
 var text = '{"employees":[' +
@@ -23,8 +30,6 @@ var noun = [
 {"en":"Book", "de_1":"das", "de_2":"Buch", "de_3":"Bücher"}
 ];
 
-
-
 var word = [
 { "en":"hello" , "de":"hallo" },
 { "en":"bye" , "de":"tschüss" },
@@ -40,8 +45,6 @@ noun[0].en +
 " : " + noun[0].de_1+
 " , " + noun[0].de_2+
 " , " + noun[0].de_3;
-
-
 </script>
 
 </body>
